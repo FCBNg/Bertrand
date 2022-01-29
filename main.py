@@ -1,11 +1,11 @@
 import discord
 from discord.ext import commands
-import youtube_dl
+import yt_dlp
 import asyncio
 
 bot = commands.Bot(command_prefix= "-" , description= "Le maitre de ses lieux")
 musics = {}
-ytdl = youtube_dl.YoutubeDL()
+ytdl = yt_dlp.YoutubeDL()
 
 @bot.event
 async def on_ready():
